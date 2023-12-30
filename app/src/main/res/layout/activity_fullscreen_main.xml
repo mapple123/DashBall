@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="activities.FullscreenMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="activities.MainActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewHScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonPause"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@xml/round"
+                    app:srcCompat="@android:drawable/ic_media_pause" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center">
+
+            <ImageView
+                android:id="@+id/imageViewBall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageViewQuadrat"
+                android:layout_width="175dp"
+                android:layout_height="186dp"
+                android:foregroundGravity="bottom|center"
+                android:src="@drawable/korb" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+</FrameLayout>

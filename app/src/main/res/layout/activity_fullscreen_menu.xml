@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullscreen_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="activities.FullscreenMenuActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/buttonPlay"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:background="@xml/round"
+                android:src="@android:drawable/ic_media_play" />
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>
